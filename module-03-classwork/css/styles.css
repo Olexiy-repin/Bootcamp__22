@@ -1,0 +1,119 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* h1 {
+  color: blue;
+}
+
+p {
+  color: green;
+} */
+
+/* ul,
+ol {
+  list-style: none;
+}
+
+.title {
+  color: green;
+}
+
+.description {
+  color: grey;
+}
+
+#main-title {
+  font-size: 24px;
+}
+
+#first-description {
+  font-size: 24px;
+}
+
+[href="https://www.google.com/"]
+{
+  color: hotpink;
+} */
+
+/* .list-item > .list-item-link {
+  color: green;
+} */
+
+/* .list-item + .list-item {
+  border: 1px solid #000;
+}
+
+.title + .description {
+  color: hotpink;
+} */
+
+/* 
+  универсальный
+  тега
+  класса
+  id
+  атрибут
+  потомка
+  дочерний
+  сестринский
+*/
+
+body {
+  font-family: sans-serif;
+  font-size: 12px;
+  color: hotpink;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 12 */
+body p.description {
+  color: red;
+}
+
+/* 10 */
+.description {
+  color: blue;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: indigo;
+  padding: 5px;
+  border: 5px solid red;
+  box-sizing: border-box;
+}
+
+.bottom-link-wrapper {
+  font-size: 0;
+}
+
+.bottom-link {
+  display: inline-block;
+  background-color: khaki;
+  font-size: 16px;
+}
+
+.background-box {
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  border: 10px dashed #000;
+  background-color: lawngreen;
+  background-image: url("https://picsum.photos/200/100");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+}
