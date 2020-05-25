@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 07 classwork</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- <h1 class="title">Title</h1>
+    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laborum inventore distinctio
+        deleniti accusamus,
+        eligendi, quos asperiores ullam commodi quam illum quis corrupti quae earum modi veniam illo molestiae
+        voluptatibus.</p> -->
+    <!-- <div class="box">
+        <div class="inner-box">
+            Lorem ipsum dolor sit amet.
+        </div>
+    </div> -->
+    <form action="#" class="contact-form">
+        <input name="user_name" type="text" class="contact-form__input" placeholder="Your name..." required
+            minlength="2">
+        <input name="user_email" type="email" class="contact-form__input" placeholder="Your email..." required>
+        <input name="user_phone" type="tel" class="contact-form__input" placeholder="096-111-11-11" required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+
+        <section class="contact-form__section">
+            <h2 class="contact-form__title">Age</h2>
+
+            <label>
+                18
+                <input name="user_age" value="18" type="radio" class="contact-form__radio" checked required>
+            </label>
+
+            <label for="user_age_26">26</label>
+            <input id="user_age_26" name="user_age" value="26" type="radio" class="contact-form__radio" required>
+
+            <label for="user_age_30">30</label>
+            <input id="user_age_30" name="user_age" value="30" type="radio" class="contact-form__radio" required>
+        </section>
+
+        <section class="contact-form__section">
+            <h2 class="contact-form__title">Hobby</h2>
+
+            <label for="user_hobby_boxing">boxing</label>
+            <input id="user_hobby_boxing" name="user_hobby" value="boxing" type="checkbox" class="contact-form__radio">
+
+            <label for="user_hobby_swiming">swiming</label>
+            <input id="user_hobby_swiming" name="user_hobby" value="swiming" type="checkbox" class="contact-form__radio"
+                checked>
+
+            <label for="user_hobby_football">football</label>
+            <input id="user_hobby_football" name="user_hobby" value="football" type="checkbox"
+                class="contact-form__radio">
+        </section>
+        <section class="contact-form__section">
+            <h2 class="contact-form__title">Message</h2>
+            <textarea class="contact-form__message" name="user_message" placeholder="Your message...."></textarea>
+        </section>
+        <section class="contact-form__section">
+            <h2 class="contact-form__title">City</h2>
+            <select name="user_city">
+                <option disabled selected>Select your city</option>
+                <option value="Kyiv">Kyiv</option>
+                <option value="Vinnitca">Vinnitca</option>
+                <option value="Dnepr">Dnepr</option>
+            </select>
+        </section>
+        <div class="btn-wrapper">
+            <button type="submit" class="contact-form__btn">submit</button>
+            <button type="reset" class="contact-form__btn">clear</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
