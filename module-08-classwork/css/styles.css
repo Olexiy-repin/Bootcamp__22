@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* body {
+  background-color: aqua;
+} */
+
+/* ========== MIN-WIDTH MAX-WIDTH ========== */
+
+/* Если ширина вьюпорта 500px или больше, 
+тогда применить, стили которые находятся внутри */
+/* @media (min-width: 500px) {
+  body {
+    background-color: brown;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+} */
+
+/* Если ширина вьюпорта 768px или больше, 
+тогда применить, стили которые находятся внутри */
+/* @media (min-width: 768px) {
+  body {
+    background-color: chartreuse;
+  }
+} */
+
+/* Пока ширина вьюпорта меньше 768px, 
+применять стили которые находятся внутри */
+/* @media (max-width: 768px) {
+  body {
+    background-color: salmon;
+  }
+} */
+
+/* Пока ширина вьюпорта меньше 500px, 
+применять стили которые находятся внутри */
+/* @media (max-width: 500px) {
+  body {
+    background-color: darkmagenta;
+  }
+} */
+
+/* @media (width: 600px) {
+  body {
+    background-color: seagreen;
+  }
+} */
+
+/* ========== AND ========== */
+/* @media (min-width: 768px) and (max-width: 959px) {
+  body {
+    background-color: sienna;
+  }
+} */
+/* ========== OR ========== */
+/* @media (max-width: 767px), (min-width: 960px) {
+  body {
+    background-color: silver;
+  }
+} */
+/* ========== TYPES ========== */
+
+/* 
+  all
+  screen
+  print
+  speech
+*/
+
+/* @media (min-width: 500px) {
+  body {
+    background-color: skyblue;
+  }
+} */
+
+/* ========== ORIENTATION ========== */
+/* @media (orientation: landscape) and (min-width: 600px) {
+  body {
+    background-color: slateblue;
+  }
+} */
+/* 
+@media (orientation: portrait) {
+  body {
+    background-color: tomato;
+  }
+} */
+
+.list-section {
+  padding: 50px 0;
+}
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.list__item-img {
+  margin: 0 auto;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* 
+  1, 2, 3
+*/
+  .list__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 560px;
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+  /* 1, 2 */
+  .list__item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    width: 840px;
+  }
+}

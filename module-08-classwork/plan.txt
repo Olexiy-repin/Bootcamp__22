@@ -1,0 +1,4 @@
+- Краткая предыстория (fixed, rubber, adaptive, responsive);
+- Обзор возможностей dev tools для адаптивной верстки;
+- viewport, meta tag viewport;
+- media;
