@@ -1,0 +1,81 @@
+.header {
+  padding-top: 38px;
+  padding-bottom: 258px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url('../images/header/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    @include font(48px, 600, 1.2);
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    font-family: $secondary-font;
+    @include font(20px, 400, 24px);
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  @media (min-resolution: 192dpi) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+      url('../images/header/bg@2x.jpg');
+  }
+}
+
+// @media (min-resolution: 192dpi) {
+//   .header {
+//     background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+//       url('../images/header/bg@2x.jpg');
+//   }
+// }
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 254px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 542px;
+
+    &-item-link {
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.35px;
+      color: #fff;
+    }
+  }
+}
+
+.logotype {
+  width: 96px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 36px;
+  color: #fff;
+}
+
+.modal-btn {
+  display: block;
+  width: 176px;
+  height: 46px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  border-width: 2px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-radius: 2px;
+  background-color: transparent;
+  margin: 0 auto;
+  cursor: pointer;
+}
